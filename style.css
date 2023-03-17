@@ -214,6 +214,10 @@ input[type=submit]:hover {
     main{
         padding-top:340px;
     }
+     body{
+        font-size-adjust: auto;
+    }
+    
     
 }
 
