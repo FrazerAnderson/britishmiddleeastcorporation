@@ -94,6 +94,7 @@ nav a:hover {
 	background-color: #E13122;
     color:#04044E;
     border-radius: 25px;
+    transition: .5s;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -188,5 +189,31 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #E13122;
   border-color: #04044E;
+}
+
+@media only screen and (max-width:600px){
+    nav ul {
+	flex-direction: column;
+    }
+    img.logo{
+        padding-top:100px;
+    }
+
+    div.main-container .card2{
+        width: 85%;
+    }
+    div.main-container .card3{
+        width: 85%;
+    }
+    #wrapper{
+    padding-top:0px;  
+    }
+    img.overlay{
+    padding-top: 0px;
+    }
+    main{
+        padding-top:340px;
+    }
+    
 }
 
