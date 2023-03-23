@@ -248,8 +248,9 @@ input[type=submit]:hover {
       }
 
     header{
-            position:static;
-    z-index: 1;
+        position:static;
+        z-index: 1;
+	width: 100%;
     }
 
     img.logo{
