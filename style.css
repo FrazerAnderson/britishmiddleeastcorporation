@@ -165,28 +165,27 @@ p.copyright {
 
 .ceo-container {
   display: flex;
+  flex-wrap: wrap;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .ceo-image {
-  flex-basis: 50%;
-}
-
-.ceo-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  flex-basis: 30%;
+  width: 400px;
+  height: 500px;
+  border: 5px solid white;
+  border-radius: 10px;
 }
 
 .ceo-description {
-  flex-basis: 50%;
+  
+flex-wrap: wrap;
   font-size: 16px;
   padding: 20px;
   background-color: #04044E;
-    color:white;
+  color:white;
 }
-
 .ceo-description h2 {
   margin-top: 0;
 }
@@ -194,6 +193,7 @@ p.copyright {
 .ceo-description p {
   margin-bottom: 0;
 }
+
 
 
 /* Page-specific styles */
@@ -220,16 +220,18 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, add a red color */
 input[type=submit]:hover {
   background-color: #E13122;
   border-color: #04044E;
 }
 
 @media only screen and (max-width:600px){
-    nav ul {
+    nav a {
 	flex-direction: column;
     }
+    
+
     img.logo{
         padding-top:100px;
     }
@@ -246,12 +248,13 @@ input[type=submit]:hover {
     img.overlay{
     padding-top: 0px;
     }
+    .ceo-description {
+        font-size-adjust: auto;
+    }
     main{
         padding-top:340px;
     }
-    body{
-        font-size-adjust: auto;
-    }
-  
+ 
+    
 }
 
