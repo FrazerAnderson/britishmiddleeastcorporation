@@ -226,10 +226,24 @@ input[type=submit]:hover {
   border-color: #04044E;
 }
 
-@media only screen and (max-width:600px){
-    nav a {
-	flex-direction: column;
-    }
+@media only screen and (max-width:800px){
+    
+     .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar img.logo {
+    margin: auto;
+  }
+  .navbar ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    margin-bottom: 10px;
+  }
     
 
     img.logo{
